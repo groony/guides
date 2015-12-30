@@ -4,4 +4,5 @@
 ## Руководства
 
 * Backend
-  * [Siteshot](backend/siteshot.md)
+  * [Eye](backend/deploy/eye.md)
+  * [Siteshot](backend/social/siteshot.md)
