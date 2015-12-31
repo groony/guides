@@ -92,11 +92,7 @@
     nvm install 0.10.36
     nvm alias stable 0.10.36
     npm install phantomjs@1.8.1-3 -g
-    git clone https://github.com/donbobka/siteshot/
-    cd siteshot
-    git checkout feature/add_page_modifier
-    npm pack
-    npm install siteshot-0.0.3.tgz -g
+    npm install ne1ro/siteshot -g
     ```
 
   2. Заходим на сервер деплоя создаем в корне проекта папку `shadow-copy`
