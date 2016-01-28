@@ -39,7 +39,7 @@ sudo service ssh restart
 * перемещаем папку в домашнюю директорию юзера
 
 ```
-sudo mv {{folder}} /home/{{restricted_user}}
+sudo mv {{folder}} /home/{{restricted_user}}/
 ```
 
 * и с того места делаем линк на перемещенную папку
