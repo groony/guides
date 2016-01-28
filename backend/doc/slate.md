@@ -34,34 +34,34 @@
 
 ## Настройка
 
+  > Все действия производим в {{path_to_project}}/slate
+
   Добавляем в Gemfile
 
   ```
-    # Live-reloading plugin
-    gem 'middleman-livereload', '~> 3.3.0'
+  # Live-reloading plugin
+  gem 'middleman-livereload', '~> 3.3.0'
 
-    # Deploy plugin
-    gem 'middleman-deploy', '~> 1.0'
+  # Deploy plugin
+  gem 'middleman-deploy', '~> 1.0'
   ```
 
   Добавляем в config.rb
 
   ```ruby
-    # Deployment settings
-    activate :deploy do |deploy|
-      deploy.method = :sftp
-      deploy.host = '{{host}}'
-      deploy.user = '{{user}}'
-      deploy.port = 22
-      deploy.path = '{{path}}'
-      deploy.build_before = true
-    end
-
+  # Deployment settings
+  activate :deploy do |deploy|
+    deploy.method = :sftp
+    deploy.host = '{{host}}'
+    deploy.user = '{{user}}'
+    deploy.port = 22
+    deploy.path = '{{path}}'
+    deploy.build_before = true
+  end
   ```
 
-  Запуск из папки slate
   ```
-    bundle exec middleman server
+  bundle exec middleman server
   ```
 
   Если возникает ошибка invalid byte sequence in UTF-8
@@ -81,5 +81,7 @@
   ### Deploy
 
   ```shell
-    bundle exec middleman deploy
+  bundle exec middleman deploy
   ```
+
+  ### Настроить location на папку в которую вы задеплоили документацию.
