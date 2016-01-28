@@ -10,3 +10,5 @@
     * [Siteshot](backend/social/siteshot.md)
   * Admin
     * [Добавить пользователя с ограничением конкретной папкой](backend/admin/sftp_user.md)
+  * Doc
+    * [Документация API через slate](backend/doc/slate.md)
