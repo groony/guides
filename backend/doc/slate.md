@@ -62,9 +62,16 @@ activate :deploy do |deploy|
   deploy.path = '{{path_to_remote_project}}/ss/shared/public/wiki'
   deploy.build_before = true
 end
+
+# Build Configuration
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+  set :layout, 'build'
+end
 ```
 
-Заменяем содержимое source/layouts/layout.erb
+Добавляем source/layouts/build.erb
 
 ```erb
 <%#
