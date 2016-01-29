@@ -198,5 +198,18 @@ bundle exec middleman deploy
 
 Настроить location на папку в которую вы задеплоили документацию.
 
+Пример:
+
+```nginx
+location @frontend-shared {
+  root /var/www/{{application_name}}/cs/shared/public;
+  try_files $uri $uri/index.html @backend-static @backend-shared;
+}
+
+location @backend-shared  {
+  root /var/www/{{application_name}}/ss/shared/public;
+  try_files $uri $uri/index.html;
+}
+```
 
 DONE!
