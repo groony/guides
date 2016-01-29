@@ -214,9 +214,11 @@ location @backend-shared  {
 
 Полезные сниппеты:
 
-[Вставка кода](snippets/md_code.sublime-snippet)
-[Таблица](snippets/md_table.sublime-snippet)
-[Страница API](snippets/md_api_page.sublime-snippet)
+* [Вставка кода](snippets/md_code.sublime-snippet)
+
+* [Таблица](snippets/md_table.sublime-snippet)
+
+* [Страница API](snippets/md_api_page.sublime-snippet)
 
 
 
