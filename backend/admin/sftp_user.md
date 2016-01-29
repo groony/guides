@@ -12,13 +12,6 @@ sudo chown root /home/{{restricted_user}}
 sudo nano /etc/ssh/sshd_config
 ```
 
-Закомментируйте:
-
-```
-UsePAM yes
-```
-
-
 Добавьте следующие строки:
 
 ```
