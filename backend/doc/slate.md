@@ -182,10 +182,10 @@ under the License.
 bundle exec middleman server
 ```
 
-Если возникает ошибка invalid byte sequence in UTF-8
+Если возникает ошибка invalid byte sequence in UTF-8 в Gemfile ставим версию `redcarpet` 3.2.1
 
-```bash
-bundle update redcarpet
+```
+gem 'redcarpet', '~> 3.2.1'
 ```
 
 Наш главный файл source/index.md в нем мы описываем базовые вещи и подключаем шаблоны.
