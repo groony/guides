@@ -1,0 +1,25 @@
+<snippet>
+  <content><![CDATA[
+
+## ${1:name}
+
+```http
+${2:method} ${3:path} HTTP/1.1
+Host: ${4:host}
+User-Agent: ${5:agent}
+```
+
+```http
+HTTP/1.1 ${6:code}
+Content-Type: ${7:application/json}
+
+[
+  ${8:json}
+]
+```
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>mdApiPage</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
