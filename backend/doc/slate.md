@@ -212,4 +212,69 @@ location @backend-shared  {
 }
 ```
 
+Полезные сниппеты:
+
+Вставка кода:
+
+```xml
+<snippet>
+  <content><![CDATA[
+```${1:ruby}
+${2:content}
+```
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>mdCode</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
+```
+
+Таблица:
+
+```xml
+<snippet>
+  <content><![CDATA[
+${1} | ${2}
+--------- | -----------
+${3} | ${4}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>mdTable</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
+```
+
+Страница API:
+
+```xml
+<snippet>
+  <content><![CDATA[
+
+## ${1:name}
+
+```http
+${2:method} ${3:path} HTTP/1.1
+Host: ${4:host}
+User-Agent: ${5:agent}
+```
+
+```http
+HTTP/1.1 ${6:code}
+Content-Type: ${7:application/json}
+
+[
+  ${8:json}
+]
+```
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>mdApiPage</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
+```
+
+
 DONE!
