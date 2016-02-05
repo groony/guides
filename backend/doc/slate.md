@@ -201,14 +201,14 @@ bundle exec middleman deploy
 Пример:
 
 ```nginx
-location @frontend-shared {
-  root /var/www/{{application_name}}/cs/shared/public;
-  try_files $uri $uri/index.html @backend-static @backend-shared;
+location @backend-static {
+  root /var/www/{{application_name}}/ss/current/public;
+  try_files $uri $uri/index.html @backend-shared;
 }
 
 location @backend-shared  {
   root /var/www/{{application_name}}/ss/shared/public;
-  try_files $uri $uri/index.html;
+  try_files $uri $uri/index.html @frontend-index;
 }
 ```
 
